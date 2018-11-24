@@ -28,7 +28,7 @@
             <span id="header--sync--icon" class="icon-arrows"></span>
         </button>
         <% } %>
-        <button id="header--add" class="header--add btn btn-danger">
+        <button id="header--add" class="header--add btn btn-dark">
             <span class="icon-doc-new"></span>
         </button>
     </div>
@@ -39,7 +39,7 @@
 <div class="sidemenu">
     <div class="list-group">
         <div class="list-group-item sidemenu--item -disabled sidemenu--close">
-            <i class="icon-left-open-big"></i>
+            <i class="sidebar-icon icon-left-open-big"></i>
             {{i18n('Close')}}
             <button type="button" class="close" aria-hidden="true">
                 &times;
@@ -47,19 +47,19 @@
         </div>
 
         <a class="list-group-item sidemenu--item" href="#{{uri}}notes">
-            <i class="icon-note"></i> {{i18n('All notes')}}
+            <i class="sidebar-icon icon-note"></i> {{i18n('All notes')}}
         </a>
         <a class="list-group-item sidemenu--item" href="#{{uri}}notes/f/favorite">
-            <i class="icon-favorite"></i> {{i18n('Favourites')}}
+            <i class="sidebar-icon icon-favorite"></i> {{i18n('Favourites')}}
         </a>
         <a class="list-group-item sidemenu--item" href="#{{uri}}notes/f/trashed">
-            <i class="icon-trashed"></i> {{i18n('Trash')}}
+            <i class="sidebar-icon icon-trashed"></i> {{i18n('Trash')}}
         </a>
         <a class="list-group-item sidemenu--item" href="#{{uri}}notebooks">
-            <i class="icon-notebook"></i> {{i18n('Notebooks & tags')}}
+            <i class="sidebar-icon icon-notebook"></i> {{i18n('Notebooks & tags')}}
         </a>
         <a class="list-group-item sidemenu--item" href="#{{ uri }}notes/f/task">
-            <i class="icon-ok"></i> {{ i18n('Open tasks') }}
+            <i class="sidebar-icon icon-ok"></i> {{ i18n('Open tasks') }}
         </a>
 
         <% if (notebooks !== null && notebooks.length) { %>
@@ -83,10 +83,10 @@
 
         <div class="list-group-item sidemenu--item -disabled">{{i18n('Other')}}</div>
         <a class="list-group-item sidemenu--item" href="#{{uri}}settings">
-            <i class="icon-cog"></i>  {{i18n('Settings')}}
+            <i class="sidebar-icon icon-cog"></i>  {{i18n('Settings')}}
         </a>
         <a id="header--about" class="list-group-item sidemenu--item" href="#">
-            <i class="icon-help-circled"></i>  {{i18n('About')}}
+            <i class="sidebar-icon icon-help-circled"></i>  {{i18n('About')}}
         </a>
     </div>
 </div>
